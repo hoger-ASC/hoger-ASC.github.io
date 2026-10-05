@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            html {zoom: 80%;}
+
+            body {
+                background-image: url(https://images.pexels.com/photos/38355051/pexels-photo-38355051.jpeg);
+                background-size: 100%;
+            }
+
+            #header {
+                grid-template-columns: auto;
+                background-color: #0F3040;
+                border-bottom: 10px solid #98E8DE;
+                margin-top: -35px;
+                padding: 60px;
+                height: 100px;
+            }
+
+            .refs {
+                display: flex;
+                background-color: #B12C00;
+                padding:10px;
+                margin: auto;
+                position: absolute;
+                margin: auto;
+                margin-left: 60%;
+                margin-top: -60px
+            }
+
+            .item {
+                 font-size: x-large;
+                 color: white;
+                 background-color: #FFC400;
+                 padding: 20px;
+                 border: solid #45A9A9 4px;
+                 text-align:center;
+                 border-radius: 20px;
+            }
+
+            #intro {
+                display: grid;
+                grid-template-columns: 2fr 2fr;
+                border-radius: 20px;
+                margin: auto;
+                margin-top: 220px;
+            }
+
+
+            @keyframes fadeIn {
+                 from { opacity: 0; }
+                 to { opacity: 1; }
+            }
+
+            .fadeIn {
+                 animation: fadeIn 2s;
+            }
+
+            .opaque {
+                font-size: x-large;
+                color:aliceblue;
+                background: grey;
+                opacity: 0.7;
+                border-radius: 20px;
+                padding: 20px;
+                background-color: gray;
+                margin-left: 80px;
+            }
+
+            #stats {
+                margin-left: 60px;
+                background-color: #0F3040;
+                border: 3px solid #45A9A9;
+                border-radius: 26px;
+                margin-right: 80px;
+            }
+
+            a:visited {
+                  color: green;
+                  background-color: transparent;
+                  text-decoration: none;
+            }
+
+
+           a:hover {
+               color: red;
+               background-color: transparent;
+               cursor: pointer;
+            }
+
+             table {
+                border: 3px solid #45A9A9;
+                color:#FFDE4E;
+                font-size:x-large
+            }
+
+            #footer {
+                grid-template-columns: auto;
+                background-color: #464858;
+                border-top: 8px solid #67B2D8;
+                margin-bottom: -40px;
+                margin-top: 320px;
+                padding: 30px;
+            }
+ 
+        </style>
+        </div>
+    </head>
+    <body id="homePage">
+        <title>Portofolio Home Page</title>
+        <div id="header">
+            <h1 style="margin-left: 25%; color: #FFDE4E">Interactive Portofolio<br>Home Page</h1>
+            <div class="refs">
+                <div class="item">
+                    <a onclick="loadPage('experience.html', 'homePage')">Experience</a>
+                </div>
+                <div class="item">
+                    <a onclick="loadPage('skills.html', 'homePage')">Skills</a>
+                </div>
+                <div class="item">
+                    <a onclick="loadPage('personalDetails.html', 'homePage')">Personal Details</a>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/hoger-AsC">Github</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
